@@ -9,7 +9,7 @@ namespace GemBox.Crack
     {
 
         public static string KeyAlaphabet = "0123456789ABCDEFGHIGKLMNOPQRSTUVWXYZ";
-        public static string CreateSpreadSheetLicense()
+        public static string CreateSpreadSheetLicense(int IsVer43=0)
         {
             int Year, Month, Day;
 
@@ -22,8 +22,8 @@ namespace GemBox.Crack
             string KeyData = GuessKey(Key4, 5);
 
             char[] array = new char[13];
-            array[0] = NumberToChar(32);
-            string index1_2 = GuessKey(74, 2);
+            array[0] = NumberToChar(28);
+            string index1_2 = GuessKey(IsVer43==1?78:74, 2);
             array[1] = index1_2[0];
             array[2] = index1_2[1];
             //接下来5个字符随机

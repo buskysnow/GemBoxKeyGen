@@ -27,8 +27,9 @@ namespace GemBoxKeyGen
         {
             List<ProductSoftWare> productVersions = new List<ProductSoftWare>()
             {
+                new ProductSoftWare(){ Name="GemBox.Spreadsheet 4.3",ChooseValue=3},
                 new ProductSoftWare(){ Name="GemBox.Spreadsheet 4.1",ChooseValue=1},
-                new ProductSoftWare(){ Name="GemBox.Document 2.9",ChooseValue=2}
+                new ProductSoftWare(){ Name="GemBox.Document 2.9",ChooseValue=2},
             };
             VersionComboBox.ItemsSource = productVersions;
             VersionComboBox.SelectedIndex = 0;
@@ -53,9 +54,12 @@ namespace GemBoxKeyGen
             switch(VersionComboBox.SelectedIndex)
             {
                 case 0:
-                    SerialKey = GemBox.Crack.KeyGen.CreateSpreadSheetLicense();
+                    SerialKey = GemBox.Crack.KeyGen.CreateSpreadSheetLicense(1);
                     break;
                 case 1:
+                    SerialKey = GemBox.Crack.KeyGen.CreateSpreadSheetLicense();
+                    break;
+                case 2:
                     SerialKey = GemBox.Crack.KeyGen.CreateWordLicense();
                     break;
             }
