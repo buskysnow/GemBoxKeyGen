@@ -1,0 +1,21 @@
+﻿<Window x:Class="GemBoxKeyGen.About"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GemBoxKeyGen"
+        mc:Ignorable="d"
+        Title="About" Height="150" Width="300" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Margin="40,15,0,0">Cracker:<TextBlock Margin="5,0,0,0" Foreground="Red">Buskysnow</TextBlock></TextBlock>
+        <TextBlock Margin="40,10,0,0" Grid.Row="1">破解为学习目的,切勿用于非法目的</TextBlock>
+        <TextBlock Margin="40,10,0,0" Grid.Row="2">希望软件作者<TextBlock Foreground="Red">升级</TextBlock> 注册验证机制</TextBlock>
+        <TextBlock Margin="40,10,0,0" Grid.Row="3">使用说明:<TextBlock Foreground="Red">填入生成的对应注册码</TextBlock></TextBlock>
+    </Grid>
+</Window>
