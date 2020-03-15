@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GemBoxKeyGen"
         mc:Ignorable="d"
-        Title="MainWindow" 
+        Title="GemBox 注册机" 
         WindowStyle="None" 
         WindowStartupLocation="CenterScreen" 
-        Height="60" Width="700" 
+        Height="60" Width="650" 
         BorderThickness="0" ResizeMode="NoResize" Background="Transparent" 
         AllowsTransparency="True" MouseLeftButtonDown="Window_MouseLeftButtonDown" KeyDown="Window_KeyDown" Loaded="Window_Loaded">
     <Border CornerRadius="5" Background="White" BorderThickness="1" BorderBrush="Gray">
@@ -16,10 +16,10 @@
             <TextBlock  VerticalAlignment="Center" Margin="20,0,0,0">版本
             </TextBlock>
             <ComboBox Name="VersionComboBox" Width="180" VerticalAlignment="Center" Margin="10,0,0,0" 
-                      DisplayMemberPath="Name" SelectedValuePath="ChooseValue"></ComboBox>
+                      DisplayMemberPath="Name" SelectedValuePath="ChooseValue" SelectionChanged="VersionComboBox_SelectionChanged"></ComboBox>
             <TextBlock  VerticalAlignment="Center" Margin="10,0,0,0">注册码</TextBlock>
             <TextBox Name="SerialKeyText" Width="180" VerticalAlignment="Center" Margin="10,0,0,0"></TextBox>
-            <Button VerticalAlignment="Center" Padding="10,2,10,2" Margin="10,0,0,0" Click="Button_Click">生成注册文件</Button>
+            <Button VerticalAlignment="Center" Padding="10,2,10,2" Margin="10,0,0,0" Click="Button_Click">生成</Button>
             <Button VerticalAlignment="Center" Padding="10,2,10,2" Margin="10,0,0,0" Click="Exit_Click">退出</Button>
             <TextBlock FontSize="14" VerticalAlignment="Center" TextDecorations="Underline" Margin="20,0,0,0" 
                        Foreground="Red" MouseLeftButtonDown="TextBlock_MouseLeftButtonDown">说明</TextBlock>

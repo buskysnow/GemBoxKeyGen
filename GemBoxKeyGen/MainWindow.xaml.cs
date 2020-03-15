@@ -76,6 +76,11 @@ namespace GemBoxKeyGen
             about.ShowDialog();
             e.Handled = true;
         }
+
+        private void VersionComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            SerialKeyText.Text = string.Empty;
+        }
     }
 
     public class ProductSoftWare
